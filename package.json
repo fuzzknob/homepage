@@ -1,0 +1,9 @@
+{
+  "name": "fuzzknob-website",
+  "version": "0.0.0",
+  "description": "Fuzzknob Site",
+  "main": "index.js",
+  "author": "Gagan Rai (@fuzzknob)",
+  "license": "false",
+  "private": true
+}
