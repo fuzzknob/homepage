@@ -4,9 +4,14 @@ module.exports = {
   theme: {
     colors: {
       primary: '#373737',
-      light: '#FAF9F6'
+      light: '#FAF9F6',
+      white: '#FFFFFF'
     },
-    extend: {},
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif'],
+    },
+    extend: {
+    },
   },
   variants: {
     extend: {},
