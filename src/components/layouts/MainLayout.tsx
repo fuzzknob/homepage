@@ -11,7 +11,7 @@ const Main: React.FC = ({ children }) => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Gagan Rai(@fuzzknob)</title>
+        <title>Gagan Rai (@fuzzknob)</title>
         <link rel="shortcut icon" href="/fuzzknob.ico" type="image/x-icon" />
         {/* Required meta tags */}
         <meta name="robots" content="index,follow" />
@@ -22,18 +22,18 @@ const Main: React.FC = ({ children }) => {
         <meta name="keywords" content="fuzzknob, Gagan Rai" />
         <meta
           name="description"
-          content="Profile page of Gagan Rai(@fuzzknob). And nothing more than that."
+          content="Profile page of Gagan Rai (@fuzzknob). And nothing more than that."
         />
 
         {/* open graph metadata */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="fuzzknob" />
         <meta property="og:url" content="https://fuzzknob.com/" />
-        <meta property="og:title" content="Gagan Rai(@fuzzknob)" />
+        <meta property="og:title" content="Gagan Rai (@fuzzknob)" />
         <meta property="og:image" content="/fuzzknob.png" />
         <meta
           property="og:description"
-          content="Profile page of Gagan Rai(@fuzzknob). And nothing more than that."
+          content="Profile page of Gagan Rai (@fuzzknob). And nothing more than that."
         />
       </Head>
       <NavBar />
