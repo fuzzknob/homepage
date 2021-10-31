@@ -21,7 +21,7 @@ const Project: React.FC<{
             <div className="flex">
               {liveURL ? (
                 <div className="mr-2">
-                  <Button to={codeURL} shape="square">
+                  <Button to={liveURL} shape="square">
                     <IoGlobeOutline />
                   </Button>
                 </div>
