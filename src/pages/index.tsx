@@ -111,6 +111,22 @@ const Index: React.FC = () => {
               , which is blazingly fast and comes in a tiny install.
             </p>
           </Project>
+          <Project
+            title="YT Distraction Remover"
+            picture="/yt.jpg"
+            tech="Javascript"
+            codeURL="https://github.com/fuzzknob/yt-distraction-remover/"
+          >
+            <p>
+              Something times the Youtube recommendations engine works too well
+              and recommends a really good video while watching tutorials or
+              learning on Youtube. Sometimes it can be really hard to resist the
+              urge to watch the recommended video. And It can be very
+              distracting to your flow. But fear not YT Distraction Remove is
+              here for the rescue. It removes all the recommendations from
+              Youtube. So, you can have a distraction-free viewing experience.
+            </p>
+          </Project>
         </div>
       </section>
       <section id="about" className="mt-14 md:mt-36">
@@ -127,16 +143,20 @@ const Index: React.FC = () => {
           </div>
           <div className="md:w-3/4">
             <p className="block">
-              Hello again, My name is Gagan Rai. I&apos;m a full-stack developer
-              based in Kathmandu. I have a passion for creating stuff that I
-              need. I&apos;m driven to be the best developer I can possibly be.
+              Hello again, My name is Gagan Rai. I&apos;m a self-taught
+              full-stack developer with a passion for creating stuff.
             </p>
             <p className="block">
-              I&apos;ve been coding for the past 5 years now. In the years, I
+              I&apos;ve been coding for the past 5 years now. Over the years, I
               got to work on different kinds of projects that solve uniquely
               different problems. I have worked with a wide range of
               technologies over the years like C#, PHP, Laravel, Javascript,
               Node.js, Typescript, Dart, Flutter, etc.
+            </p>
+            <p className="block">
+              I have always strived to get better at my craft. I don&apos;t like
+              to get stagnant with the level of skill for years. So, I&apos;m
+              always looking for an opportunity to learn and improve my skills.
             </p>
             <p className="block">
               Outside of coding I like to play Guitar (but not that good at it
