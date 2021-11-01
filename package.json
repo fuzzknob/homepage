@@ -1,8 +1,8 @@
 {
-  "name": "website",
+  "name": "homepage",
   "author": "Gagan Rai (@fuzzknob)",
   "version": "2.0.0",
-  "description": "fuzzknob website",
+  "description": "fuzzknob homepage",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
