@@ -68,7 +68,7 @@ const Index: React.FC = () => {
           <Project
             title="DropshipPro"
             picture="/dropshippro.jpg"
-            tech="React.js, Typescript, Python, Docker, Nest.js and Postgres"
+            tech="React.js, Typescript, Python, Docker, Nest.js, and Postgres"
             liveURL="https://dropshippro.io"
           >
             A companion app for the people who do eBay dropshipping. It tracks
@@ -81,7 +81,7 @@ const Index: React.FC = () => {
             title="Wedhub"
             picture="/wedhub.jpg"
             liveURL="https://wedhub.de/"
-            tech="Vue.js, Hasura, Postgres, Next.js, Flutter and Heroku"
+            tech="Vue.js, Hasura, Postgres, Next.js, and Flutter"
           >
             An event planning app for the event operator. It&apos;s a complete
             solution for the event locations. It handles everything from
@@ -92,7 +92,7 @@ const Index: React.FC = () => {
           <Project
             title="Codeman"
             picture="/codeman.jpg"
-            tech="React.js, Typescript, Rust and Tauri"
+            tech="React.js, Typescript, Rust, and Tauri"
             codeURL="https://github.com/fuzzknob/codeman"
           >
             <p>
