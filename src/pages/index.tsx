@@ -60,7 +60,7 @@ const Index: React.FC = () => {
           I&apos;m a <span className="font-bold">Full Stack</span> developer
           based in Kathmandu
         </h6>
-        <Button to="mailto:me@fuzzknob.com">CONTACT ME</Button>
+        <Button to="mailto:contact@fuzzknob.com">CONTACT ME</Button>
       </section>
       <section id="works">
         <h1 className="text-right text-xl font-bold mb-6 md:mb-14">works</h1>
