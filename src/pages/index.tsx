@@ -12,9 +12,9 @@ const Project: React.FC<{
 }> = ({ title, children, codeURL, picture, liveURL, tech }) => {
   return (
     <div className="mb-8 md:mb-16">
-      <h3 className="text-xl font-bold underline mb-4 md:mb-0">{title}</h3>
-      <div className="flex flex-col-reverse md:flex-row justify-between">
-        <div className="md:w-2/3 flex flex-col justify-between pt-6">
+      <h3 className="mb-4 text-xl font-bold underline md:mb-0">{title}</h3>
+      <div className="flex flex-col-reverse justify-between md:flex-row">
+        <div className="flex flex-col justify-between pt-6 md:w-2/3">
           <div>{children}</div>
           <div className="mt-5">
             <p className="font-bold">Built with {tech}</p>
@@ -36,7 +36,7 @@ const Project: React.FC<{
             </div>
           </div>
         </div>
-        <div className="md:ml-5 text-center md:text-right">
+        <div className="text-center md:ml-5 md:text-right">
           <Image
             className="rounded-xl"
             src={picture}
@@ -56,19 +56,45 @@ const Index: React.FC = () => {
       <section className="py-44">
         <h6 className="md:text-lg md:-mb-7">Hey, I&apos;m</h6>
         <h1 className="text-2xl md:text-mega">Gagan</h1>
-        <h6 className="md:text-lg mb-5">
+        <h6 className="mb-5 md:text-lg">
           I&apos;m a <span className="font-bold">Full Stack</span> developer
           based in Kathmandu
         </h6>
         <Button to="mailto:contact@fuzzknob.com">CONTACT ME</Button>
       </section>
       <section id="works">
-        <h1 className="text-right text-xl font-bold mb-6 md:mb-14">works</h1>
+        <h1 className="mb-6 text-xl font-bold text-right md:mb-14">works</h1>
         <div>
+          <Project
+            title="Dload"
+            picture="/dload.jpg"
+            tech="React.js, Typescript, Docker, Turborepo, Aria2"
+            codeURL="https://github.com/fuzzknob/dload"
+          >
+            <p className="block">
+              Dload, short for &quot;Download&quot; (because why not), is a
+              download manager that runs inside a Docker container. It supports
+              queuing, automatically assigning of file extensions to the renamed
+              download, and has a intuitive UI.
+            </p>
+            <p className="block">
+              It uses the fast{' '}
+              <a
+                href="https://aria2.github.io/"
+                className="font-bold underline"
+              >
+                aria2
+              </a>{' '}
+              download utility in the backend for downloading, with a Node.js
+              server managing everything. The front-end is built using React.js
+              and Vite. Additionally, The project is managed and built using
+              Turborepo.
+            </p>
+          </Project>
           <Project
             title="DropshipPro"
             picture="/dropshippro.jpg"
-            tech="React.js, Typescript, Python, Docker, Nest.js, and Postgres"
+            tech="React.js, Typescript, Python, Docker, Nest.js, Turborepo and Postgres"
             liveURL="https://dropshippro.io"
           >
             A companion app for the people who do eBay dropshipping. It tracks
@@ -105,7 +131,7 @@ const Index: React.FC = () => {
               The first version of this project was built using vue.js and
               electron. And it&apos;s as fast as an Electron app can be. But the
               new version of this app is being built using{' '}
-              <a href="https://tauri.studio" className="underline font-bold">
+              <a href="https://tauri.studio" className="font-bold underline">
                 Tauri
               </a>
               , which is blazingly fast and comes in a tiny install.
@@ -130,7 +156,7 @@ const Index: React.FC = () => {
         </div>
       </section>
       <section id="about" className="mt-14 md:mt-36">
-        <h1 className="text-right text-xl font-bold mb-6 md:mb-14">about</h1>
+        <h1 className="mb-6 text-xl font-bold text-right md:mb-14">about</h1>
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="mb-5 text-center md:text-left md:mb-0 md:mr-8">
             <Image
@@ -143,8 +169,8 @@ const Index: React.FC = () => {
           </div>
           <div className="md:w-3/4">
             <p className="block">
-              Hello again, My name is Gagan Rai. I&apos;m a self-taught
-              full-stack developer with a passion for creating stuff.
+              Hello, My name is Gagan Rai. I&apos;m a self-taught full-stack
+              developer with a passion for creating stuff.
             </p>
             <p className="block">
               I&apos;ve been coding for the past 5 years now. Over the years, I
