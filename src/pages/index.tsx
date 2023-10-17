@@ -1,7 +1,11 @@
 import React from 'react'
 import Button from '../components/Button'
 import Image from 'next/image'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
 import { IoCodeSlashOutline, IoGlobeOutline } from 'react-icons/io5'
+
+dayjs.extend(relativeTime)
 
 const Project: React.FC<{
   title: string
@@ -50,7 +54,11 @@ const Project: React.FC<{
   )
 }
 
-const Index: React.FC = () => {
+type PageProps = {
+  yearsOfCoding: string
+}
+
+const Index = ({ yearsOfCoding }: PageProps) => {
   return (
     <>
       <section className="py-44">
@@ -173,9 +181,9 @@ const Index: React.FC = () => {
               developer with a passion for creating stuff.
             </p>
             <p className="block">
-              I&apos;ve been coding for the past 5 years now. Over the years, I
-              got to work on different kinds of projects that solve uniquely
-              different problems. I have worked with a wide range of
+              I&apos;ve been coding for the past {yearsOfCoding} now. Over the
+              years, I got to work on different kinds of projects that solve
+              uniquely different problems. I have worked with a wide range of
               technologies over the years like C#, PHP, Laravel, Javascript,
               Node.js, Typescript, Dart, Flutter, etc.
             </p>
@@ -194,6 +202,14 @@ const Index: React.FC = () => {
       </section>
     </>
   )
+}
+
+export const getServerSideProps = () => {
+  const startDate = '2017-05-01'
+  const yearsOfCoding = dayjs(startDate).fromNow(true)
+  return {
+    props: { yearsOfCoding },
+  }
 }
 
 export default Index
