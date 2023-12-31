@@ -70,7 +70,7 @@ const Main: React.FC = ({ children }) => {
           </a>
         </div>
       </section>
-      <p className="mt-10 text-center text-gray">© 2023 - Gagan Rai</p>
+      <p className="mt-10 text-center text-gray">© 2024 - Gagan Rai</p>
     </main>
   )
 }
