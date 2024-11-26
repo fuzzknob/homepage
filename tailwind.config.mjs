@@ -1,14 +1,14 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
 
-module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
       primary: '#373737',
       gray: '#A8A8A8',
       light: '#FAF9F6',
-      white: '#FFFFFF'
+      white: '#FFFFFF',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
@@ -22,9 +22,6 @@ module.exports = {
       base: '16px',
       sm: '15px',
     },
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],

@@ -1,37 +1,30 @@
 {
-  "name": "homepage",
-  "author": "Gagan Rai (@fuzzknob)",
-  "version": "2.0.0",
-  "description": "fuzzknob homepage",
-  "license": "MIT",
+  "name": "homepage-astro",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "pnpm lint && pnpm format && astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "biome lint --write .",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "dayjs": "^1.11.12",
-    "next": "^12.3.4",
-    "postcss": "^8.4.41",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.12.0",
-    "tailwindcss": "^2.2.19"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^5.1.2",
+    "@iconify-json/heroicons": "^1.2.1",
+    "@iconify-json/simple-icons": "^1.2.13",
+    "astro": "^4.16.15",
+    "astro-icon": "^1.1.4",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@types/node": "^16.18.105",
-    "@types/react": "^17.0.80",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^12.3.4",
-    "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "prettier": "^2.8.8",
-    "tslib": "^2.6.3",
-    "typescript": "^4.9.5"
+    "@biomejs/biome": "1.9.4",
+    "prettier": "^3.4.0",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.9"
   }
 }

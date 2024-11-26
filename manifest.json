@@ -1,7 +1,0 @@
-{
-    "name": "Fuzzknob",
-    "short_name": "fuzzknob",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#000"
-}

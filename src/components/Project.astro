@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components'
+
+import Button from './ui/Button.astro'
+
+interface Props {
+  title: string
+  picture: string
+  codeURL?: string
+  liveURL?: string
+  tech?: string
+}
+const { title, codeURL, picture, liveURL, tech } = Astro.props
+---
+
+<div class="mb-8 md:mb-16">
+  <h3 class="mb-4 text-xl font-bold underline md:mb-0">{title}</h3>
+  <div class="flex flex-col-reverse justify-between md:flex-row">
+    <div class="flex flex-col justify-between pt-6 md:w-2/3">
+      <div><slot /></div>
+      <div class="mt-5">
+        <p class="font-bold">Built with {tech}</p>
+        <div class="flex">
+          {
+            liveURL ? (
+              <div class="mr-2">
+                <Button to={liveURL} shape="square">
+                  <Icon name="heroicons:globe-alt" />
+                </Button>
+              </div>
+            ) : null
+          }
+          {
+            codeURL ? (
+              <div>
+                <Button to={codeURL} shape="square">
+                  <Icon name="heroicons:code-bracket" />
+                </Button>
+              </div>
+            ) : null
+          }
+        </div>
+      </div>
+    </div>
+    <div class="text-center md:ml-5 md:text-right">
+      <img
+        class="rounded-xl"
+        src={picture}
+        alt={title}
+        width={300}
+        height={250}
+      />
+    </div>
+  </div>
+</div>

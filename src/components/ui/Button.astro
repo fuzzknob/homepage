@@ -1,0 +1,15 @@
+---
+interface Props {
+  to: string
+  shape?: 'square' | 'rectangle'
+}
+const { to, shape } = Astro.props
+
+const padding = shape === 'square' ? 'p-3' : 'py-2 px-4'
+---
+
+<a class="text-sm" href={to || '#'}>
+  <button class={`bg-primary text-white rounded-lg pointer ${padding}`}>
+    <slot />
+  </button>
+</a>
